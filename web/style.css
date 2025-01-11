@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+  
+b {
+    color: blue;
+}
+
+.player-box {
+    background: #fff;
+    border: 1px solid #000;
+    float: left;
+    width: auto;
+    font-size: 16px;
+    text-align: center;
+    padding-block: 8px;
+    padding-inline: 8px;
+    margin-right: 3px;
+    min-width: 100px;
+    height: 62px;
+}
+
+.player-list button {
+    padding-inline: 2px;
+    padding-block: 2px;
+    margin-top: 5px;
+    margin-bottom: -2px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

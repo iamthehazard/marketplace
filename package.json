@@ -1,0 +1,28 @@
+{
+  "name": "marketplace",
+  "version": "0.0.1",
+  "description": "yay",
+  "type": "module",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "browserify-css": "^0.15.0",
+    "express": "^4.18.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "socket.io": "^4.7.1"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.24.9",
+    "@babel/preset-env": "^7.25.0",
+    "@babel/preset-react": "^7.24.7"
+  },
+  "scripts": {
+    "build": "babel web/scripts -d web/build && babel common/modules -d web/build/compiled-modules && browserify -t browserify-css web/build/main.js > web/build/bundle.js",
+    "start": "npm run build && node server/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
